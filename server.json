@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.newageflyfish-max/volthq",
+  "description": "Compute price oracle for AI agents — compare pricing across 9 providers in real time.",
+  "repository": {
+    "url": "https://github.com/newageflyfish-max/volthq-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.25",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "volthq-mcp-server",
+      "version": "0.1.25",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
