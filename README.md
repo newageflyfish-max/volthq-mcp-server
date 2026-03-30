@@ -4,7 +4,7 @@ The compute price oracle for AI agents.
 
 ## What it does
 
-- **Compares pricing** across 8 providers (OpenAI, Anthropic, Groq, Together AI, DeepInfra, Fireworks AI, Hyperbolic, Akash) — 106+ offerings with live API pricing
+- **Compares pricing** across 9 providers (OpenAI, Anthropic, Groq, Together AI, DeepInfra, Fireworks AI, Cerebras, Hyperbolic, Akash) — 200+ offerings with live API pricing
 - **Recommends optimal routing** — tells your agent where to get the same quality for less, with savings estimates
 - **Tracks spend and budgets** — spending summaries by provider/model, savings reports, and threshold alerts
 
@@ -64,7 +64,7 @@ Detects installed clients, merges config without overwriting your existing MCP s
 ```
 > volt_check_price { "model": "llama-70b" }
 
-Price comparison for "llama-70b" — 8 offerings found
+Price comparison for "llama-70b" — 14 offerings found
 ────────────────────────────────────────────────────────────
 1. DeepInfra — Llama-70B
    Input: $0.20/M tokens | Output: $0.27/M tokens | Avg: $0.24/M
@@ -83,7 +83,7 @@ Price comparison for "llama-70b" — 8 offerings found
    Quality: 88% | Region: global
 
 5. Fireworks AI — Llama-70B
-   Input: $0.70/M tokens | Output: $0.70/M tokens | Avg: $0.70/M
+   Input: $0.90/M tokens | Output: $0.90/M tokens | Avg: $0.90/M
    Quality: 88% | Region: global
 
 6. Together AI — Llama-70B
@@ -101,7 +101,7 @@ Price comparison for "llama-70b" — 8 offerings found
 Cheapest is 97% less than most expensive option.
 ```
 
-DeepInfra at $0.24/M, Hyperbolic at $0.40/M, Groq at $0.69/M, Fireworks AI at $0.70/M — all vs GPT-4o at $6.25/M.
+DeepInfra at $0.24/M, Hyperbolic at $0.40/M, Groq at $0.69/M, Fireworks AI at $0.90/M — all vs GPT-4o at $6.25/M.
 
 ## Supported providers
 
@@ -110,7 +110,8 @@ DeepInfra at $0.24/M, Hyperbolic at $0.40/M, Groq at $0.69/M, Fireworks AI at $0
 - **Groq** — Llama-70B, Llama-8B, Mixtral-8x7B
 - **Together AI** — Llama-70B, Llama-8B, DeepSeek-V3
 - **DeepInfra** — 75+ models with live API pricing (Llama, DeepSeek, Qwen, Mistral, Gemma, and more)
-- **Fireworks AI** — Llama-70B, Llama-8B, DeepSeek-R1
+- **Fireworks AI** — Llama-70B, Llama-8B, DeepSeek-V3
+- **Cerebras** — Llama-3.1-8B, Qwen-3-235B
 - **Hyperbolic** — DeepSeek-V3, DeepSeek-R1, Llama-70B, Llama-8B
 - **Akash** — Llama-70B, Llama-8B on H100 and A100 (live GPU pricing)
 
